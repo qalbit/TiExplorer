@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86
+description: Use for Select file from Internal or External Storage and returns the TiFile Object.
+author: Abidhusain Chidi
+license: MIT License
+copyright: © 2017, Wecobi
+
+# these should not be edited
+name: tiexplorer
+moduleid: ti.explorer
+guid: 37a4ebae-775c-4301-9b1d-f5a5a4a2be29
+platform: android
+minsdk: 7.0.1.GA

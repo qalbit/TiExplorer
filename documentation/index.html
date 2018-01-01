@@ -1,0 +1,72 @@
+<h1>TiExplorer Module</h1>
+
+<p>The TiExplorer module enables you to read files from Internal/External storage and save in your application specific folder which you selected.</p>
+
+<p>This project can be found on github at <a href="https://github.com/wecobi/TiExplorer">here</a>.</p>
+
+<h2>Before you start</h2>
+
+<ul>
+<li>This is an Android module designed to work with Titanium SDK 7.0.0 or greater.</li>
+</ul>
+
+<h2>Accessing the TiExplorer Module</h2>
+
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>
+var TiExplorer = require("ti.explorer");
+</pre></code>
+
+<h3>Method</h3>
+
+<h4>selectFile</h4>
+
+<pre><code>
+TiExplorer.selectFile({
+	mimeType: "application/vnd.ms-excel",
+	location: TiExplorer.EXTERNAL_STORAGE,
+	onSuccess: function(e) {
+		if(e.status == TiExplorer.EXTERNAL_STORAGE) {
+			// Success Received
+			var fileObj = file || null;
+			if(fileObj != null) {
+				alert("File Created Successfully!");
+			}
+		}
+	},
+	onError: function(e) {
+		Ti.API.info("onError>>>> " + JSON.stringify(e));
+	}
+});
+</pre></code>
+
+<p>You can create an request for SelectFile using below properties</p>
+<ul>
+<li><b>mimeType</b> (Optional) (String) MimeType of file you want to read. (Default, */*)</li>
+<li><b>location</b> (Optional) (Constant) TiExplorer Defined Constant used to give location of file. (Default, <span>CACHE_DIRECTORY</span>)</li>
+<li><b>onSuccess</b> (Required) (Function) Successful response, then you can get response in here.</li>
+<li><b>onSuccess</b> (Required) (Function) An Error response you get here.</li>
+</ul>
+
+<h3>Constant</h3>
+
+<h4>Result Response status</h4>
+<pre><code>RESULT_OK</pre></code>
+<pre><code>RESULT_CANCELED</pre></code>
+<pre><code>RESULT_ERROR</pre></code>
+
+<h4>Storage location</h4>
+<pre><code>EXTERNAL_STORAGE</pre></code>
+<pre><code>CACHE_DIRECTORY</pre></code>
+<pre><code>DATA_DIRECTORY</pre></code>
+<pre><code>EXTERNAL_CACHE_DIRECTORY</pre></code>
+
+<h2>Author</h2>
+<ul>
+<li>Abidhusain Chidi</li>
+<li>abidhusain.wecobi@gmail.com</li>
+</ul>
+
+<h2>Licensing & Support</h2>
+
+<p>This project is licensed under the MIT approved License. For details please see the license associated with each project.</p>
