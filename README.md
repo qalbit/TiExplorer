@@ -17,7 +17,7 @@ var TiExplorer = require("ti.explorer");
 
 ###Method
 
-###*selectFile
+###selectFile
 
 <pre><code>
 TiExplorer.selectFile({
@@ -47,12 +47,12 @@ You can create an request for SelectFile using below properties
 
 ###Constant
 
-###*Result Response status
+###Result Response status
 <pre><code>RESULT_OK</pre></code>
 <pre><code>RESULT_CANCELED</pre></code>
 <pre><code>RESULT_ERROR</pre></code>
 
-###*Storage location
+###Storage location
 <pre><code>EXTERNAL_STORAGE</pre></code>
 <pre><code>CACHE_DIRECTORY</pre></code>
 <pre><code>DATA_DIRECTORY</pre></code>
