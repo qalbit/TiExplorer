@@ -4,21 +4,17 @@ The TiExplorer module enables you to read files from Internal/External storage a
 
 This project can be found on github at [https://github.com/wecobi/TiExplorer](here).
 
-##Before you start
+## Before you start
 
 * This is an Android module designed to work with Titanium SDK 7.0.0 or greater.
 
-##Accessing the TiExplorer Module
-
+## Accessing the TiExplorer Module
 To access this module from JavaScript, you would do the following:
-<pre><code>
-var TiExplorer = require("ti.explorer");
-</pre></code>
+<pre><code>var TiExplorer = require("ti.explorer");</code></pre>
 
-###Method
+### Method
 
-###selectFile
-
+### selectFile
 <pre><code>
 TiExplorer.selectFile({
 	mimeType: "application/vnd.ms-excel",
@@ -36,32 +32,32 @@ TiExplorer.selectFile({
 		Ti.API.info("onError>>>> " + JSON.stringify(e));
 	}
 });
-</pre></code>
+</code></pre>
 
 You can create an request for SelectFile using below properties
+* <b>mimeType</b> (Optional) (String) MimeType of file you want to read. (Default, */*)
+* <b>location</b> (Optional) (Constant) TiExplorer Defined Constant used to give location of file. (Default, <span>CACHE_DIRECTORY</span>)
+* <b>onSuccess</b> (Required) (Function) Successful response, then you can get response in here.
+* <b>onSuccess</b> (Required) (Function) An Error response you get here.
 
-*<b>mimeType</b> (Optional) (String) MimeType of file you want to read. (Default, */*)
-*<b>location</b> (Optional) (Constant) TiExplorer Defined Constant used to give location of file. (Default, <span>CACHE_DIRECTORY</span>)
-*<b>onSuccess</b> (Required) (Function) Successful response, then you can get response in here.
-*<b>onSuccess</b> (Required) (Function) An Error response you get here.
 
-###Constant
+### Constant
 
 ###Result Response status
-<pre><code>RESULT_OK</pre></code>
-<pre><code>RESULT_CANCELED</pre></code>
-<pre><code>RESULT_ERROR</pre></code>
+* RESULT_OK
+* RESULT_CANCELED
+* RESULT_ERROR
 
-###Storage location
-<pre><code>EXTERNAL_STORAGE</pre></code>
-<pre><code>CACHE_DIRECTORY</pre></code>
-<pre><code>DATA_DIRECTORY</pre></code>
-<pre><code>EXTERNAL_CACHE_DIRECTORY</pre></code>
+### Storage location
+* EXTERNAL_STORAGE
+* CACHE_DIRECTORY
+* DATA_DIRECTORY
+* EXTERNAL_CACHE_DIRECTORY
 
-##Author
-*Abidhusain Chidi
-*[mailto:abidhusain.wecobi@gmail.com](abidhusain.wecobi@gmail.com)
+## Author
+* Abidhusain Chidi
+* abidhusain.wecobi@gmail.com
 
-##Licensing & Support
-
+## Licensing & Support
 This project is licensed under the MIT approved License. For details please see the license associated with each project.
+
