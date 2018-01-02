@@ -4,6 +4,11 @@ The TiExplorer module enables you to read files from Internal/External storage a
 
 This project can be found on github at [https://github.com/wecobi/TiExplorer](here).
 
+### Get it [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/ti.explorer)
+Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/platform/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
+
+`$ gittio install dk.napp.drawer`
+
 ## Before you start
 
 * This is an Android module designed to work with Titanium SDK 7.0.0 or greater.
