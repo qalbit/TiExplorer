@@ -7,7 +7,7 @@ This project can be found on github at [https://github.com/wecobi/TiExplorer](he
 ### Get it [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/ti.explorer)
 Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/platform/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
 
-`$ gittio install dk.napp.drawer`
+`$ gittio install ti.explorer`
 
 ## Before you start
 
