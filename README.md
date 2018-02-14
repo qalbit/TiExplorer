@@ -25,9 +25,9 @@ TiExplorer.selectFile({
 	mimeType: "application/vnd.ms-excel",
 	location: TiExplorer.EXTERNAL_STORAGE,
 	onSuccess: function(e) {
-		if(e.status == TiExplorer.EXTERNAL_STORAGE) {
+		if(e.status == TiExplorer.RESULT_OK) {
 			// Success Received
-			var fileObj = file || null;
+			var fileObj = e.file || null;
 			if(fileObj != null) {
 				alert("File Created Successfully!");
 			}
