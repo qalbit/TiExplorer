@@ -61,7 +61,7 @@ You can create an request for SelectFile using below properties
 
 ## Author
 * Abidhusain Chidi
-* abidhusain.wecobi@gmail.com
+* abidhusain@qalbit.com
 
 ## Licensing & Support
 This project is licensed under the MIT approved License. For details please see the license associated with each project.
